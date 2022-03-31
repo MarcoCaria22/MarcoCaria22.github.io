@@ -1,0 +1,277 @@
+/*website style*/
+
+@font-face {
+    font-family: Prstartk;
+    src: url(../assets/prstartk.ttf);
+}
+
+body {
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-family: Prstartk, sans-serif;
+    font-size: 28px;
+}
+
+#home {
+    text-align: center;
+    border-bottom: 2px solid yellow;
+    padding-bottom: 100px;
+}
+
+#high-scores{
+    text-align: center;
+    border-bottom: 2px solid yellow;
+    padding: 100px 0; 
+}
+
+#how-to-play{
+    text-align: center;
+    border-bottom: 2px solid yellow;
+    padding: 100px 0; 
+}
+
+#players {
+    padding: 100px 0; 
+}
+
+/*nav*/
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    
+}
+
+nav ul li {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: yellow;
+    transition: 5s;
+}
+
+/*Pacman Style*/
+
+.logo {
+    display: block;
+    width: 600px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+.pacman1 {
+    transform: rotate(180deg);
+    width: 90px;
+    margin-right: 70px;
+    right: -30px;
+
+}
+
+.pacman2{
+    width: 90px;
+    margin-right: 70px;
+    align-items: center;
+}
+
+.ghosts{
+    width: 90px;
+    align-items: center;
+}
+
+
+
+.players-table .ghosts {
+    transform: scaleX(-1);
+}
+
+.characters {
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+/*Insert Coin Animation*/
+
+.insert-coin {
+    text-align: center;
+    -webkit-animation: blink 1s infinite linear;
+    -moz-animation: blink 1s infinite linear;
+    animation: blink 1s infinite linear;
+    padding: 50px 0;
+}
+
+
+@keyframes blink{
+    49% {opacity: 1;}
+    50% {opacity: 0;}
+    99% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+/*Ghost Chase*/
+.ghosts-chase {
+ animation: run 10s infinite;
+}
+
+@keyframes run {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/*Pacamn Chase */
+
+.pacman-chase {
+    animation: run-pacman 10s infinite;
+}
+
+@keyframes run-pacman {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+/*Yellow Text*/
+
+.ready{
+   text-align: center;
+    color: yellow;
+}
+
+.ready p {
+    margin: 0;
+}
+
+/*Best Players Table*/
+
+.best-players-table {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.best-players-table tr:nth-child(4n) {
+    color: #FF0400;
+}
+
+.best-players-table tr:nth-child(4n+1) {
+    color: #01F8F8;
+}
+
+.best-players-table tr:nth-child(4n+2) {
+    color: #FF60B2;
+}
+
+.best-players-table tr:nth-child(4n+3) {
+    color: #FFA000;
+}
+
+.best-players-table th {
+    color: white;
+    padding-bottom: 50px;
+}
+
+/*Table*/
+table{
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+td{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+
+/*Players Table Styles*/
+
+.players-table {
+    text-align: left;
+    width: 60%;
+    height: 60vh;
+    margin: auto;
+    font-size: 28px;
+    margin-bottom: 50px;
+}
+
+.players-table tr:nth-of-type(4n+3) {
+    color: #FF60B2;
+  }
+  
+  .players-table tr:nth-of-type(4n) {
+    color: #01F8F8;
+  }
+  
+  .players-table tr:nth-of-type(4n+1) {
+    color: #FFA000;
+  }
+  
+  .players-table tr:nth-of-type(4n+2) {
+    color: #FF0400;
+  }
+  
+  .players-table th {
+    color: #ffffff;
+  }
+  
+  .players-table tr td:nth-of-type(1){
+    text-align: right;
+    padding-right: 10px;
+  } 
+
+
+/*Bottom of the Website*/
+
+.cube {
+    display: inline-block;
+    background: yellow;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+
+}
+
+.square {
+    display: inline-block;
+    background: yellow;
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
+}
+
+.pargraph {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pargraph p {
+    margin-right: 30px;
+}
+
+.pargraph .ghosts {
+    margin: 0 10px;
+}
+
+footer {
+    text-align: center;
+    font-size: 14px;
+}
